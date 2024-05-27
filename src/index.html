@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Hello Random Card Generator</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -14,15 +19,26 @@
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
+      <h1 class="mt-5">Random Card Generator</h1>
+      <button type="button" class="btn btn-warning" id="clickToShuffle">
+        Click to Shuffle
+      </button>
+      <div
+        class="d-flex justify-content-center align-items-center cardp"
+        style="height: 50vh;"
+      >
+        <div class="card-heart card_template">
+          <div class="corner top-left">♣</div>
+          <div class="corner bottom-right">♣</div>
+          <div class="numCenter">3</div>
+        </div>
+      </div>
+
+      <label for="cardWidth">Card width</label><br />
+      <input type="number" id="cardWidth" value="255" style="min-width:1px;" />
       <div class="fixed-bottom p-4">
         Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+        <a href="#">nunezweb</a>
       </div>
     </div>
   </body>
