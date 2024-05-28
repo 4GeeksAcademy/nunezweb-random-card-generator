@@ -1,3 +1,14 @@
+// /* eslint-disable */
+import "bootstrap";
+import "./style.css";
+
+// window.onload = () => {
+//   document.querySelector(".numCenter").innerHTML = cardNumberGenerator();
+//   const cardSymbol = cardSymbolGenerator();
+//   const cardSymbolCorners = document.querySelectorAll(".corner");
+//   cardSymbolCorners[0].innerHTML = cardSymbol;
+//   cardSymbolCorners[1].innerHTML = cardSymbol;
+//
 /* eslint-disable */
 import "bootstrap";
 import "./style.css";
@@ -11,6 +22,8 @@ import "./style.css";
 //
 
 const element = document.getElementById("clickToShuffle");
+let cardNumber = ["1", "3", "J", "8"];
+let suits = ["♦", "♥", "♠", "♣"];
 
 element.addEventListener("click", function() {
   document.querySelector(".numCenter").innerHTML = cardNumberGenerator();
@@ -27,8 +40,6 @@ element.addEventListener("click", function() {
     cardSymbolCorners[1].style.color = "black";
   }
 });
-let cardNumber = ["1", "3", "J", "8"];
-let suits = ["♦", "♥", "♠", "♣"];
 
 let cardNumberGenerator = () => {
   let cardNumberIndex = Math.floor(Math.random() * cardNumber.length);
