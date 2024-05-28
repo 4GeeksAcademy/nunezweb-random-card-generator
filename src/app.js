@@ -1,15 +1,3 @@
-// /* eslint-disable */
-import "bootstrap";
-import "./style.css";
-
-// window.onload = () => {
-//   document.querySelector(".numCenter").innerHTML = cardNumberGenerator();
-//   const cardSymbol = cardSymbolGenerator();
-//   const cardSymbolCorners = document.querySelectorAll(".corner");
-//   cardSymbolCorners[0].innerHTML = cardSymbol;
-//   cardSymbolCorners[1].innerHTML = cardSymbol;
-//
-/* eslint-disable */
 import "bootstrap";
 import "./style.css";
 
