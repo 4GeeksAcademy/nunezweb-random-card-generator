@@ -1,4 +1,4 @@
-import "bootstrap";
+// import "bootstrap";
 import "./style.css";
 
 // window.onload = () => {
@@ -39,4 +39,25 @@ let cardSymbolGenerator = () => {
   let suitsIndex = Math.floor(Math.random() * suits.length);
 
   return suits[suitsIndex];
+};
+
+// ------------------
+window.changeWidth = function() {
+  var width = document.getElementById("widthInputWidth").value;
+  var box = document.getElementsByClassName("card_template")[0];
+  if (width >= 100 && width <= 300) {
+    box.style.width = width + "px";
+  } else {
+    alert("Please enter a valid value between 100px and 300px.");
+  }
+};
+
+window.changeHeight = function() {
+  var height = document.getElementById("widthInputHeight").value;
+  var box = document.getElementsByClassName("card_template")[0];
+  if (height >= 100 && height <= 500) {
+    box.style.height = height + "px";
+  } else {
+    alert("Please enter a valid value between 100px and 500px.");
+  }
 };
