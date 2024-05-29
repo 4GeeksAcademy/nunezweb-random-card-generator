@@ -41,23 +41,22 @@ let cardSymbolGenerator = () => {
   return suits[suitsIndex];
 };
 
-// ------------------
 window.changeWidth = function() {
   var width = document.getElementById("widthInputWidth").value;
   var box = document.getElementsByClassName("card_template")[0];
-  if (width >= 100 && width <= 300) {
+  if (width >= 100 && width <= 800) {
     box.style.width = width + "px";
   } else {
-    alert("Please enter a valid value between 100px and 300px.");
+    alert("Please enter a valid value between 100px and 800px.");
   }
 };
 
 window.changeHeight = function() {
   var height = document.getElementById("widthInputHeight").value;
   var box = document.getElementsByClassName("card_template")[0];
-  if (height >= 100 && height <= 500) {
+  if (height >= 100 && height <= 1200) {
     box.style.height = height + "px";
   } else {
-    alert("Please enter a valid value between 100px and 500px.");
+    alert("Please enter a valid value between 100px and 1200px.");
   }
 };
